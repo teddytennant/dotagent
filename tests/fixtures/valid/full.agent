@@ -1,0 +1,29 @@
+name: test-agent
+extends: base
+mode: autonomous
+description: A fully-featured test agent
+
+[identity]
+author = "Test User <test@example.com>"
+role = "engineer"
+
+[constraints]
+- must pass tests
+- no force push
+- keep changes minimal
+
+[memory]
+brain = "/tmp/brain"
+read-on-start = true
+write-on-end = false
+
+[scope]
+paths = ["/tmp/repos/**"]
+modes = ["maintain", "build"]
+
+[schedule]
+interval = 5m
+script = "/tmp/run.sh"
+
+[tools]
+allowed = ["read", "write", "bash"]

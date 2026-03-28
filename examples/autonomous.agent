@@ -1,0 +1,25 @@
+name: maintainer
+extends: base
+mode: autonomous
+description: Autonomous engineering agent that cycles through repositories
+
+[identity]
+author = "Jane Doe <jane@example.com>"
+
+[constraints]
+- tests must pass before commit
+- never force push
+- keep changes minimal
+
+[memory]
+brain = "/home/user/agent-brain/"
+read-on-start = true
+write-on-end = true
+
+[schedule]
+interval = 10m
+script = "/home/user/agent-loop.sh"
+
+[scope]
+paths = ["/home/user/repos/**"]
+modes = ["maintain", "build", "cross-repo"]

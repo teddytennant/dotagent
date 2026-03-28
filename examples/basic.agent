@@ -1,0 +1,14 @@
+name: assistant
+mode: interactive
+description: A basic interactive coding assistant
+
+[identity]
+author = "Jane Doe <jane@example.com>"
+
+[constraints]
+- tests must pass before commit
+- never force push
+- prefer minimal changes
+
+[scope]
+paths = ["/home/user/project"]

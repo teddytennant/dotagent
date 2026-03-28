@@ -1,0 +1,173 @@
+/* dotagent — clean blue, minimal */
+
+:root {
+    --blue-50: #f0f4f8;
+    --blue-100: #d9e2ec;
+    --blue-200: #bcccdc;
+    --blue-400: #627d98;
+    --blue-500: #486581;
+    --blue-600: #334e68;
+    --blue-700: #243b53;
+    --blue-800: #102a43;
+    --blue-900: #0a1f33;
+    --accent: #2680c2;
+    --accent-light: #4098d7;
+}
+
+/* Light theme overrides */
+.light {
+    --bg: #fafbfc;
+    --fg: var(--blue-800);
+    --sidebar-bg: var(--blue-50);
+    --sidebar-fg: var(--blue-700);
+    --sidebar-active: var(--accent);
+    --links: var(--accent);
+}
+
+/* Body */
+.light .content,
+.content {
+    font-family: "Inter", "Helvetica Neue", -apple-system, sans-serif;
+    max-width: 48rem;
+    line-height: 1.7;
+    color: var(--blue-800);
+    letter-spacing: -0.01em;
+}
+
+/* Headings */
+.content h1 {
+    font-size: 1.75rem;
+    font-weight: 600;
+    color: var(--blue-900);
+    border-bottom: 2px solid var(--blue-100);
+    padding-bottom: 0.4rem;
+    margin-top: 2.5rem;
+    letter-spacing: -0.025em;
+}
+
+.content h2 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--blue-700);
+    margin-top: 2rem;
+    letter-spacing: -0.02em;
+}
+
+.content h3 {
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: var(--blue-600);
+    margin-top: 1.5rem;
+}
+
+/* Links */
+.content a {
+    color: var(--accent);
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: border-color 0.15s;
+}
+
+.content a:hover {
+    border-bottom-color: var(--accent);
+}
+
+/* Code */
+.content code {
+    font-family: "JetBrains Mono", "Fira Code", "SF Mono", monospace;
+    font-size: 0.875em;
+    background: var(--blue-50);
+    color: var(--blue-700);
+    padding: 0.15em 0.35em;
+    border-radius: 4px;
+}
+
+.content pre {
+    background: var(--blue-900) !important;
+    border: none;
+    border-radius: 6px;
+    padding: 1.25rem;
+    line-height: 1.5;
+    overflow-x: auto;
+}
+
+.content pre code {
+    background: transparent;
+    color: var(--blue-100);
+    padding: 0;
+    font-size: 0.85em;
+}
+
+/* Tables */
+.content table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 1rem 0;
+    font-size: 0.9em;
+}
+
+.content th {
+    text-align: left;
+    font-weight: 600;
+    color: var(--blue-600);
+    border-bottom: 2px solid var(--blue-200);
+    padding: 0.5rem 0.75rem;
+}
+
+.content td {
+    padding: 0.45rem 0.75rem;
+    border-bottom: 1px solid var(--blue-100);
+    color: var(--blue-700);
+}
+
+.content tr:last-child td {
+    border-bottom: none;
+}
+
+/* Sidebar */
+.sidebar {
+    font-size: 0.9em;
+}
+
+.sidebar .sidebar-scrollbox {
+    padding-top: 1.5rem;
+}
+
+.sidebar a {
+    color: var(--blue-500);
+}
+
+.sidebar a:hover,
+.sidebar a.active {
+    color: var(--accent);
+}
+
+/* Chapter title in sidebar */
+.sidebar .chapter li.active > a {
+    color: var(--accent);
+    font-weight: 600;
+}
+
+/* Nav buttons */
+.nav-chapters {
+    color: var(--blue-400);
+}
+
+.nav-chapters:hover {
+    color: var(--accent);
+}
+
+/* Clean up menu bar */
+#menu-bar {
+    border-bottom: 1px solid var(--blue-100);
+}
+
+/* Blockquotes */
+.content blockquote {
+    border-left: 3px solid var(--accent-light);
+    padding: 0.5rem 1rem;
+    margin: 1rem 0;
+    color: var(--blue-600);
+    background: var(--blue-50);
+    border-radius: 0 4px 4px 0;
+}

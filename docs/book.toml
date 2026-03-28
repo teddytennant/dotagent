@@ -1,0 +1,11 @@
+[book]
+title = "dotagent"
+authors = ["dotagent contributors"]
+language = "en"
+src = "src"
+
+[output.html]
+additional-css = ["theme/style.css"]
+default-theme = "light"
+preferred-dark-theme = "navy"
+git-repository-url = "https://github.com/dotagent/dotagent"

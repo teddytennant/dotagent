@@ -1,0 +1,6 @@
+name: helper
+mode: passive
+
+[constraints]
+- read only
+- no file writes

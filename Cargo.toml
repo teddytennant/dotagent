@@ -1,0 +1,15 @@
+[package]
+name = "dotagent"
+version = "0.1.0"
+edition = "2021"
+description = "Parser and validator for .agent configuration files"
+license = "MIT"
+repository = "https://github.com/dotagent/dotagent"
+
+[[bin]]
+name = "dotagent"
+path = "src/main.rs"
+
+[lib]
+name = "dotagent"
+path = "src/lib.rs"
